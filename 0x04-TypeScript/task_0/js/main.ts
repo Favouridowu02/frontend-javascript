@@ -20,7 +20,7 @@ const student2:Student = {
     location: "Italy",
 }
 
-const studentList:Student[] = [student1, student2];
+const studentsList:Student[] = [student1, student2];
 
 const table = document.createElement("table");
 const headerRow = document.createElement("tr");
@@ -38,7 +38,7 @@ headerRow.appendChild(header3);
 headerRow.appendChild(header4);
 table.appendChild(headerRow);
 
-for (const student of studentList) {
+for (const student of studentsList) {
     const row = document.createElement("tr");
     const cell1 = document.createElement("td");
     cell1.textContent = student.firstName;
@@ -55,4 +55,4 @@ for (const student of studentList) {
     table.appendChild(row);
 }
 
-console.log(studentList);
+console.log(studentsList);
