@@ -54,3 +54,5 @@ for (const student of studentLists) {
     row.appendChild(cell4);
     table.appendChild(row);
 }
+
+console.log(studentLists);
